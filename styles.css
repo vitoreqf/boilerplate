@@ -24,9 +24,10 @@
     padding: 1rem;
 
     gap: 1rem;
-    display: flex;
+    display: grid;
     align-items: center;
-
+    grid-template-columns: min-content auto min-content;
+    
     background-color: red;
 }
 
@@ -58,7 +59,6 @@
 .container .navbar .content-search {
     width: auto;
     height: auto;
-    margin-left: auto;
 
     gap: 0.5rem;
     display: flex;
@@ -85,8 +85,8 @@
     height: auto;
 
     gap: 1rem;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
 }
 
 .container .cards {
